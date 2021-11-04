@@ -6,15 +6,15 @@ block content
   - let results=[{type :"plastic",colour:"red",cost:20},{type:"ceramic",colour:"blue",cost:25.99},{type:"paper",colour:"yellow",cost:9.99}] 
     div(class="row")
       each form,index in results
-        div(class = "col-sm-2 bg-primary" onclick=`buy(${index})`) #{form.type}
+        div(class = "col-sm-2 bg-secondary" onclick=`buy(${index})`) #{form.type}
         br
         br
         br
-        div(class = "col-sm-2 bg-primary" onclick=`buy(${index})`) #{form.colour}
+        div(class = "col-sm-2 bg-secondary" onclick=`buy(${index})`) #{form.colour}
         br
         br
         br
-        div(class = "col-sm-2 bg-primary" onclick=`buy(${index})`) #{form.cost}
+        div(class = "col-sm-2 bg-secondary" onclick=`buy(${index})`) #{form.cost}
     script.
      
       function buy(itemNo)
